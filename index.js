@@ -23,6 +23,10 @@ app.get('/random_joke', (req, res) => {
   res.json(randomJoke());
 });
 
+app.get('/jokes/count', (req, res) => {
+  res.json({"jokes":count});
+});
+
 app.get('/random_ten', (req, res) => {
   res.json(randomTen());
 });
